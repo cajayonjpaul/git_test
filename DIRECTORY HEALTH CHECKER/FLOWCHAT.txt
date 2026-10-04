@@ -1,0 +1,17 @@
+Start
+  ↓
+Extractor runs
+  ↓
+Read health log
+  ↓
+Did extraction cycle start?
+  ├─ No  → NOT HEALTHY
+  └─ Yes
+        ↓
+Any errors / exceptions / missing completion?
+  ├─ Yes → WARNING
+  └─ No
+        ↓
+Did health validation pass?
+  ├─ No  → NOT HEALTHY
+  └─ Yes → HEALTH
